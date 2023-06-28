@@ -1,0 +1,49 @@
+Projects summary
+
+Project 1 (UI):
+
+	Created a project & Named Awesome01
+	Learnt to build and start it on emulator  
+	Learnt to use components like 
+		View
+		SafeAreaView
+		Text
+	Learnt to use
+		useColorScheme - Hook to get the theme info
+	Learnt to use styles
+		Styled few components like View, Text 
+
+Project 2 (UI):
+
+	Create a project & Named Styler02
+	Learnt Flat card, Elevated card, 
+
+	Flat card
+		Explored few styling properties
+
+	Elevated card
+		Learnt scrollview component and used horizontal property
+		Learnt styling properties
+			elevation, 
+			shadowColor, 
+			shadowOffset: { width: 5, height: 5}, 
+			shadowOpacity, 
+			shadowRadius
+
+	Fancy card    
+		Learnt Image component and used source property (uri)
+	
+	Action card
+		Learnt Linking and Touchable Opacity
+	
+		Linking is used to link a page 
+
+		Touchable opacity is like a button. It takes onPress props. 
+	
+	Contact card
+		Learnt how to iterate a ui 
+		Used scroll view with scrollEnabled: false props
+
+Project 3 (Password Generator):
+
+	

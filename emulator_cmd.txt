@@ -1,0 +1,7 @@
+C:\Users\arulving\AppData\Local\Android\Sdk\emulator
+
+emulator -list-avds "List down all the emulators"
+
+emulator -avd Resizable_Experimental_API_34 "Start the emulator specified"
+
+emulator -wipe-data -avd "Remove all the data and Start the specified emulator"

@@ -1,0 +1,9 @@
+Errors faced
+
+Unable to load script.Make sure you are either running a Metro server or that your bundle 'index.android.bundle' is packaged correctly for release.
+
+Solution 
+
+mkdir android/app/src/main/assets
+
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res

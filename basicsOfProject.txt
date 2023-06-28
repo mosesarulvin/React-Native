@@ -1,0 +1,30 @@
+Step 1: 
+	Create a project by using following command
+		npx react-native@latest init ProjectName
+Step 2: 
+	Create a file local.properties inside android folder
+	Give a path for SDK
+		sdk.dir = C:\\Users\\arulving\\AppData\\Local\\Android\\Sdk
+Step 3: 
+	Even after that I am getting errors 
+	So,
+ 		Create a assets folder 
+		To create 
+			mkdir android/app/src/main/assets
+	And:
+		Use the following command to bundle the application 
+			react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res 
+	Or add this in Package jon file: 
+		"android-bundle" : "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+
+	Or add this run command with that :
+		 && react-native run-android
+	
+	like this: 
+		"android-bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",	
+
+	Then run: 	
+		Using the following command
+			npm run android-bundle
+Step 4:
+	Check the application in the emulator
