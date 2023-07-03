@@ -7,3 +7,23 @@ Solution
 mkdir android/app/src/main/assets
 
 npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+While creating the Project using the following command 
+
+npx react-native init AwesomeProject 
+
+Got the following error
+
+TypeError: cli.init is not a function
+
+Resolved the error by the following commands 
+
+npm uninstall -g react-native-cli
+
+npm install -g react-native-cli
+
+npm install -g react-native
+
+Now I could create the Project
+
+npx react-native init AwesomeProject
